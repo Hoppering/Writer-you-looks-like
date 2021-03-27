@@ -1,0 +1,75 @@
+#block_2 
+{
+    display: none;
+}
+
+#block_4
+{
+    display: none;
+}
+
+#warning
+{
+    display: none;
+}
+
+#btn_1
+{
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#btn_2
+{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#btn_3
+{
+    display: none;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#save
+{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+}
+
+@font-face
+{
+    font-family: dope_1;
+    src: url(./1.otf);
+}
+
+body
+{
+    background-image: url(./paper.jpg);
+    font-family: dope_1;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+button
+{
+    font-family: dope_1;
+    font-weight: bold;
+}
+
+textarea
+{
+    border: 1px black solid;
+    background-image: url(./paper.jpg);
+    font-family: dope_1;
+    font-weight: bold;
+    font-size: 30px;
+    width: 400px;
+    height: 150px;
+    resize: none;
+}

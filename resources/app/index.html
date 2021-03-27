@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Экспертная система по подбору писателя на основе человеческого лексикона</title>
+  </head>
+  <body>
+
+    <div id="block_1"> 
+      <div id="name_1">Выбирите предпочитаемый Вами жанр</div>
+      <input type="radio" name="choice_1" id="check_1">Фантастика <br>
+      <input type="radio" name="choice_1" id="check_2">Детективы<br>
+      <input type="radio" name="choice_1" id="check_3">Приключения<br>
+      <input type="radio" name="choice_1" id="check_4">Стихи<br>
+      <input type="radio" name="choice_1" id="check_5">Русская классика<br>
+      <button type="button" id="btn_1">Далее</button>
+      </div>
+  
+      <div id="block_2">
+          <div>Вы уже близки к цели! Для того, чтобы выбрать нужный Вам пункт, воспользуйтесь окошком снизу. Он поможет подсчитать количество слов.</div>
+          <textarea id="input_text"></textarea><br>
+          <input type="radio" name="choice_2" id="check_6">Высокий уровень точности (от 50000 слов)<br>
+          <input type="radio" name="choice_2" id="check_7">Средний уровень точности (от 30000 слов)<br>
+          <input type="radio" name="choice_2" id="check_8">Низкий уровень точности (от 10000 слов)<br>
+          <button type="button" id="btn_2">Подсчитать</button>
+          <div id="warning">Внимание! После того, как Вы нажмёте на кнопку "Результат", придётся немного подождать, пока программа выдаст результат.</div>
+          <button type="button" id="btn_3">Результат</button>
+      </div>
+  
+      <div id="block_4">
+          <div>Ваш результат:</div>
+          <div id="result"></div>
+          <button type="button" id="save">Сохранить</button>
+      </div>
+    <script src="./renderer.js"></script>
+    <script src="./functions.js"></script>
+    <script src="./save.js"></script>
+    <script src="./word.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </body>
+</html>
